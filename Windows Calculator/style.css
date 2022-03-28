@@ -1,0 +1,135 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   background: url(calculator.png) no-repeat top;
+   background-position: contain;
+   position: relative;
+   overflow: hidden;
+}
+
+.wrapperStyle{
+    width: 350px;
+    height: 470px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 3px 20px rgba(0,0,0,0.5);
+    border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-radius: 13px;
+}
+
+.titleBarStyle{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    padding: 0 5px;
+}
+
+.appTitleStyle{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.appName{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+/*.circleStyle{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle1Style{
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    background-color: #fdbd30;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.circle2Style{
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    background-color: #36cc40;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.circle3Style{
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    background-color: #fd5858;
+    border-radius: 100px;
+    cursor: pointer;
+}
+*/
+
+.displayStyle{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
+    caret-color: transparent;
+    background-color: #e0e0e0;
+    border: none;
+}
+
+.displayStyle:focus{
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+
+.btnAreaStyle{
+    width: 100%;
+}
+
+.btnRow1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btnStyle{
+    width: 80px;
+    height: 60px;
+    font-size: 16px;
+    background-color: black;
+    /*background-color: #292929;*/
+    border: none;
+    color: #fff;
+    border-radius: 40px;
+    margin: 3px 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
